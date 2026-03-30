@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de Advocacia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Agende sua Consulta - Advocacia Couto</title>
+</head>
+
+<body>
+    <div class="voltar"><a href="index.html"><img src="./img/seta.png">Voltar</a></div>
+    <div class="form-container">
+        <div class="form">
+            <form action="form.php" method="post">
+                <h1>Entre em contato</h1>
+                <p>Preencha o formulário abaixo e entraremos em contato com você</p>
+                <div class="input1">
+                    <input type="text" name="nome" id="nome" class="input-caixa" autocomplete="off" maxlength="40" required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="input1">
+                    <input type="tel" name="telefone" id="tel" class="input-caixa" autocomplete="off" placeholder="Digite somente números" maxlength="11" required>
+                    <label for="tel">Telefone</label>
+                </div>
+                <div class="input2">
+                    <span>Qual o melhor horário para você:</span><br>
+                    <label for="manha">
+                        <input type="radio" name="periodo" id="manha" class="input" value="manha" required>
+                        Manhã
+                    </label>
+                    <br>
+                    <label for="tarde">
+                        <input type="radio" name="periodo" id="tarde" class="input" value="tarde" required>
+                        Tarde
+                    </label>
+                </div>
+                <div class="input3">
+                    <label for="objetivo"><span>Em que área podemos te ajudar:</span></label><br>
+                    <select id="objetivo" name="objetivo" required>
+                        <option value="">Selecione</option>
+                        <option value="civil">Civil</option>
+                        <option value="indenizações">Indenizações</option>
+                        <option value="consumidor">Consumidor</option>
+                        <option value="imobiliario">Imobiliário</option>
+                        <option value="saude">Saúde</option>
+                        <option value="familia">Família</option>
+                        <option value="previdenciario">Previdenciário</option>
+                        <option value="negociacoes">Negociações</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="botao"><input type="submit" value="Enviar"></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
